@@ -82,7 +82,7 @@ d3.csv("assets/data/data.csv").then(function(healthriskData, err) {
         .attr("cx", d => xLinearScale(d.poverty))
         .attr("cy", d => yLinearScale(d.healthcare))
         // Radius
-        .attr("r", "10")
+        .attr("r", "8")
         .attr("fill", "#add8e6")
         .attr("stroke", "white");
 
@@ -92,7 +92,7 @@ d3.csv("assets/data/data.csv").then(function(healthriskData, err) {
         .attr("y", d => yLinearScale(d.healthcare))
         .text(d => d.abbr)
         .attr("font-family", "sans-serif")
-        .attr("font-size", "10px")
+        .attr("font-size", "8px")
         .attr("font-weight", "bold")
         .attr("text-anchor", "middle")
         .attr("fill", "#FFFFFF");
